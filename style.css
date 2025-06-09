@@ -1,0 +1,105 @@
+ /* Base Reset & Typography */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    /* Main Container */
+    .container {
+      max-width: 900px;
+      width: 90%;
+      margin: 30px auto;
+      background-color: #fff;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 { text-align: center; color: #007BFF; margin-bottom: 10px; }
+    /* Tabs */
+    .tabs {
+      overflow: hidden;
+      background-color: #007BFF;
+      border-radius: 8px 8px 0 0;
+      margin-bottom: 10px;
+    }
+    .tabs button {
+      background-color: inherit;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      color: #fff;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+      float: left;
+    }
+    .tabs button:hover { background-color: #0056b3; }
+    .tabs button.active { background-color: #0056b3; }
+    /* Tab Content */
+    .tabcontent { display: none; padding: 20px 0; }
+    .tabcontent.active { display: block; }
+    /* Input & Button Styles */
+    form, .dropdown { text-align: center; margin-bottom: 20px; }
+    input[type="text"], select {
+      padding: 10px; font-size: 1rem; width: 80%; max-width: 300px;
+      border: 1px solid #ccc; border-radius: 4px;
+    }
+    .btn {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover { background-color: #0056b3; }
+    /* Search Tab */
+    .weather-info, .forecast-grid { margin-top: 20px; }
+    .weather-card, .forecast-card {
+      border: 1px solid #eee;
+      padding: 15px;
+      border-radius: 8px;
+      background-color: #e9f2f9;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .forecast-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    /* Results (Global / Continental) */
+    .results-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .result-box {
+      flex: 1 1 300px;
+      background-color: #fafafa;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+    }
+    .result-box h3 { text-align: center; margin-bottom: 10px; }
+    ul { list-style-type: none; padding: 0; }
+    li { padding: 5px; border-bottom: 1px solid #eee; }
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #fff;
+      margin-top: auto;
+      box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    }
